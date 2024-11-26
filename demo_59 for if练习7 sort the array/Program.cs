@@ -22,10 +22,10 @@ namespace demo_59
             //}
 
             //用逻辑排序:冒泡排序，轮次交换，最后边的一定最大
-            
+            bool change;
             for(int i = 0; i < c.Length - 1; i++)
             {
-                bool change = false;//优化：作为不再交换的条件
+                change = false;//优化：作为不再交换的条件
                 for (int j = 0; j < c.Length - 1 - i; j++)//优化：不再需要和已经最大的值比较，故-i
                 {
                     if (c[j] > c[j + 1])

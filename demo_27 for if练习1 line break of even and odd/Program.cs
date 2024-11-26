@@ -10,23 +10,19 @@
             int b = Convert.ToInt32(Math.Max(m, n));
             string x = "";
             string y = "";
-
-            for(int f=a;f<=b;f++)
+            for (int f = a; f <= b; f++)
             {
-                if(f%2==0)
+                if (f % 2 == 0)
                 {
-                    
-                    x = x + f+" ";
-
+                    x = x + f + " ";//得到偶数列
                 }
                 else
                 {
-                    y = y + f+" ";
+                    y = y + f + " ";//得到奇数列
                 }
-                
             }
-            Console.WriteLine(x);
-            Console.WriteLine(y);
+            Console.WriteLine(x.Trim());//去掉空格
+            Console.WriteLine(y.Trim());
         }
     }
 }

@@ -4,18 +4,21 @@
     {
         static void Main(string[] args)
         {
-            
+            string s=Console.ReadLine();
             int b = 0;
-            char c;
-            do
+            char[] c = new char[s.Length];
+            for (int i = 0; i < s.Length; i++)
             {
-                c= (char)Console.Read();
-                if(c>='0'&&c<='9')
+                c[i] = s[i];
+                if (c[i] >= '0' && c[i] <= '9')
                 {
-                    int n = c - '0';
-                    b += n;
+                    b++;
                 }
-            } while (c!='@');
+                if (c[i] == '.')
+                {
+                    break;
+                }
+            }
             Console.WriteLine(b);
         }
     }

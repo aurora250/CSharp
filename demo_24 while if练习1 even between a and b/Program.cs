@@ -4,24 +4,21 @@
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello, World!")/*;*/
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
             int M = Convert.ToInt32(Math.Max(a,b));
             int m = Convert.ToInt32(Math.Min(a,b));
-            int x = m;
+            int x = m;//设置一个可以改变的m值
             while(x>=m&&x<=M)
             {
-                if(x%2==0)
+                if(x%2==0)//是偶数
                 {
                     Console.WriteLine(x);
                     x += 2;
                 }
-                else
+                else//是奇数
                 {
-                    x++;
-                    Console.WriteLine(x);
-                    x++;
+                    x++;//变偶，由上面输出
                 }
             }
         }

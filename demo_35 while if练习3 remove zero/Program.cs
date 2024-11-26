@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            ////法一
-            //string x=Console.ReadLine();
-            //string y = x.Replace("0", "");
-            //Console.WriteLine(y);
+            //法一
+            string x = Console.ReadLine();
+            string y = x.Replace("0", "");
+            Console.WriteLine(y);
 
             //法二
             int n = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +22,7 @@
                     s += i;
                     c *= 10;
                 }
-                n /= 10;//i==0,直接下一位计算循环
+                n /= 10;//i==0,则直接下一位计算循环
             }
             Console.WriteLine(s);
 
